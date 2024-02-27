@@ -82,7 +82,7 @@ if (!$success) {
             $values = explode(';', $line[0]);
             $entryIdentifier = htmlspecialchars($values[0]);
 
-            echo "<input class='input-box' name='questionr' value='" . htmlspecialchars($values[0]) . "'>";
+            echo "<input class='input-box' name='questionr' value='" . textbox . "'>";
             echo "<input class='input-box ' name='answer1' value='" . htmlspecialchars($values[1]) . "'>";
             echo "<input class='input-box' name='answer2' value='" . htmlspecialchars($values[2]) . "'>";
             echo "<input class='input-box' name='answer3' value='" . htmlspecialchars($values[3]) . "'>";
