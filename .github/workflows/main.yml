@@ -1,0 +1,16 @@
+name: Save PR Details
+
+on:
+  pull_request:
+
+jobs:
+  save-pr-details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Save PR details
+        run: |
+          echo "Saving PR details to pr_details.json"
+          echo '${{ toJSON(github.event.pull_request) }}' > pr_details.json
