@@ -15,8 +15,18 @@ jobs:
         with:
           node-version: '14'
       
+      - name: Install dependencies
+        run: npm install
+      
       - name: Save PR details
         env:
           PR_DETAILS: '${{ toJSON(github.event.pull_request) }}'
         run: |
           node savePrDetails.js
+     
+      - name: Analyze code for vulnerabilities
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node analyzeCodeWithOpenAI.js
