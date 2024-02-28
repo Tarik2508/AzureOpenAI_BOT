@@ -1,0 +1,25 @@
+{
+  "name": "azureopenai_bot",
+  "version": "1.0.0",
+  "description": "Pull Request Automation bot",
+  "main": "analyzeCodeWithOpenAI.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarik2508/AzureOpenAI_BOT.git"
+  },
+  "keywords": [
+    "chatbot",
+    "kibot",
+    "azureopenAi"
+  ],
+  "author": "Tarik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tarik2508/AzureOpenAI_BOT/issues"
+  },
+  "homepage": "https://github.com/Tarik2508/AzureOpenAI_BOT#readme"
+}
